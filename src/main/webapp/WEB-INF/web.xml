@@ -1,0 +1,31 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app id="gt3-server-java-servlet-sdk">
+    <display-name>gt3-server-maven-sdk</display-name>
+
+    <servlet>
+        <servlet-name>FirstRegisterServlet</servlet-name>
+        <display-name>FirstRegisterServlet</display-name>
+        <servlet-class>com.geetest.demo.FirstRegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SecondValidateServlet</servlet-name>
+        <display-name>SecondValidateServlet</display-name>
+        <servlet-class>com.geetest.demo.SecondValidateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstRegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SecondValidateServlet</servlet-name>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
