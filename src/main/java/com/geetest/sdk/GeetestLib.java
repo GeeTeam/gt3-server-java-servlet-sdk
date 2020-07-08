@@ -111,6 +111,7 @@ public class GeetestLib {
     private String requestRegister(Map<String, String> paramMap) {
         paramMap.put("gt", this.geetest_id);
         paramMap.put("json_format", this.JSON_FORMAT);
+        paramMap.put("sdk", this.VERSION);
         String register_url = this.API_URL + this.REGISTER_URL;
         this.gtlog(String.format("requestRegister(): 验证初始化, 向极验发送请求, url=%s, params=%s.", register_url, paramMap));
         String origin_challenge = null;
